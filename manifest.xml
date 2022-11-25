@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="teracube"
+            fetch="https://github.com/teracube-mt6765-devs"
+            revision="lineage-19.1" />
+
+    <remote name="arcadia"
+            fetch="https://github.com/arcadia-oss"
+            revision="emerald-s-oss" />
+
+    <!-- Teracube Device Repositories -->
+    <project path="device/teracube/emerald" name="android_device_teracube_emerald" groups="device" remote="teracube" />
+    <project path="device/teracube/zirconia" name="android_device_teracube_zirconia" groups="device" remote="teracube" />
+    <project path="device/teracube/mt6765-common" name="android_device_teracube_mt6765-common" groups="device" remote="teracube" />
+
+    <!-- MediaTek -->
+    <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" groups="mediatek" remote="teracube" />
+
+    <!-- Kernel -->
+    <project path="kernel/teracube/mt6765" name="mt6765" groups="kernel" remote="arcadia" />
+
+    <!-- Proprietary -->
+    <project path="vendor/teracube" name="proprietary_vendor_teracube" groups="vendor,teracube" remote="teracube" />
+
+    <!-- Teracube customizations -->
+    <project path="vendor/teracube-opensource" name="android_vendor_teracube-opensource" groups="vendor,teracube" remote="teracube" />
+</manifest>
